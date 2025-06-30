@@ -8,6 +8,7 @@
  * @description Purp
  * @authorId 326690045715283968
 */
+@import url('https://B4T3S.github.io/Fallout4TerminalTheme/css/crtEffect.css');
 @supports (color:color-mix(in lch,red,blue)) {
     .visual-refresh .theme-darker, .visual-refresh.theme-darker {
         --highlight: rgb(172, 28, 255)!important;
@@ -15,6 +16,7 @@
         --background: rgb(0, 0, 0)!important;
         --default-text: rgb(136, 107, 184)!important;
         --toggle: rgb(255, 255, 255)!important;
+        --muted-color: color-mix(in lch, var(--default-text)20%, var(--background)80%)!important;
 
         --online: var(--highlight);
         --idle: rgb(172, 115, 190);
@@ -68,6 +70,10 @@
         /*this bit's for the video progress bar*/
         --brand-500: var(--highlight)!important;
         --brand-560: var(--highlight)!important;
+
+        --background-nested-floating: var(--muted-color)!important;
+        --background-modifier-selected: var(--muted-color)!important;
+        --background-modifier-hover: var(--background)!important;
 }}
 span{
     color: var(--default-text);
@@ -91,6 +97,12 @@ a>span:hover{
 .childContainer__91a9d{
     padding: unset;
 }
+.embed__623de{
+    border-radius: 2px;
+}
+.link__2ea32{
+    border-radius: 0px;
+}
 /* set scroll bar color */
 .scroller__36d07.customTheme_d125d2.auto_d125d2.scrollerBase_d125d2.disableScrollAnchor_d125d2.managedReactiveScroller_d125d2{
     scrollbar-width: none;
@@ -102,14 +114,14 @@ a>span:hover{
 /*change hover effect*/
 .theme-dark.mouse-mode.full-motion.visual-refresh .message__5126c:hover, .theme-dark.visual-refresh .message__5126c.selected__5126c{
     background: var(--background);
-    //background-image: linear-gradient(var(--background), var(--highlight));
+    /*background-image: linear-gradient(var(--background), var(--highlight));*/
     outline: 1px solid var(--border-faint);
     border-radius: 1px;
-    //--text-muted: var(--toggle);
+    /*--text-muted: var(--toggle);*/
 }
-.theme-dark.mouse-mode.full-motion.visual-refresh .message__5126c:hover>.contents_c19a55>.markup__75297.messageContent_c19a55>span, .theme-dark.visual-refresh .message__5126c.selected__5126c>.contents_c19a55>.markup__75297.messageContent_c19a55>span{
-   // color: var(--toggle);
-}
+/*.theme-dark.mouse-mode.full-motion.visual-refresh .message__5126c:hover>.contents_c19a55>.markup__75297.messageContent_c19a55>span, .theme-dark.visual-refresh .message__5126c.selected__5126c>.contents_c19a55>.markup__75297.messageContent_c19a55>span{
+    color: var(--toggle);
+}*/
 /* add gradient to title bar */
 .layer__960e4.baseLayer__960e4{
     background-image: linear-gradient(270deg, var(--background), var(--highlight));
@@ -142,4 +154,13 @@ a>span:hover{
 /*change confirmed app text color*/
 .botText__82f07{
     color: var(--toggle);
+}
+/* remove border from pop-ups*/
+.buttonsInner__5126c.popover_f84418.popoverReactionHoverBar_f84418.wrapper_f7ecac{
+    border: none;
+    border-radius: 0px;
+}
+/*add border to channel hover */
+.wrapper__2ea32:hover, .wrapper__2ea32.modeSelected__2ea32{
+    border-left: var(--highlight) solid 5px;
 }
