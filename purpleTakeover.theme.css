@@ -65,7 +65,9 @@
 
         --bg-brand: var(--highlight)!important;
 
-
+        /*this bit's for the video progress bar*/
+        --brand-500: var(--highlight)!important;
+        --brand-560: var(--highlight)!important;
 }}
 span{
     color: var(--default-text);
