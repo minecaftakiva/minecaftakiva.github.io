@@ -60,6 +60,7 @@
         --channel-text-area-placeholder: var(--default-text)!important;
 
         --radius-sm: 2px!important;
+        --radius-xs: 1px!important;
 
         --text-muted: var(--default-text)!important;
 
