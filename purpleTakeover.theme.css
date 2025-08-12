@@ -165,6 +165,4 @@ a>span:hover{
 .wrapper__2ea32:hover, .wrapper__2ea32.modeSelected__2ea32{
     box-shadow: -100px 0px var(--highlight);
 }
-:hover > .unreadImportant__2ea32{
-    background-color: var(--highlight);
-}
+
