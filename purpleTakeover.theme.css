@@ -162,5 +162,8 @@ a>span:hover{
 }
 /*add border to channel hover */
 .wrapper__2ea32:hover, .wrapper__2ea32.modeSelected__2ea32{
-    border-left: var(--highlight) solid 5px;
+    box-shadow: -100px 0px var(--highlight);
+}
+:hover > .unreadImportant__2ea32{
+    background-color: var(--highlight);
 }
